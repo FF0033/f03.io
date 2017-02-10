@@ -1,0 +1,90 @@
+* {
+  outline: 1px solid rgba(255, 0, 51, 0.2);
+  box-sizing: border-box;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  font: 20px/150% 'Noto Sans', 'Liberation Sans', 'Helvetica', 'Lucida Sans', sans-serif;
+  background: #254683;
+}
+
+body {
+  margin: 0;
+}
+
+#meme {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  box-shadow: 0 0 0 1vw #fff inset;
+}
+
+.app-container {
+  min-height: 100vh;
+}
+
+#hero {
+  color: #fff;
+  position: relative;
+  height: 100vh;
+}
+
+#hero h1 {
+  font-size: 8vmin;
+  text-align: center;
+  line-height: 115%;
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 50vh;
+  margin-top: -8vmin;
+}
+
+#hero .icon {
+  width: 10vmin;
+  height: 10vmin;
+  background: #fff;
+  color: #254683;
+  line-height: 10vmin;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+#hero .icon#ha1 {
+  top: 22.5vh;
+  left: 15vw;
+}
+
+#hero .icon#ha2 {
+  left: 15vw;
+  bottom: 22.5vh;
+}
+
+#hero .icon#ha3 {
+  top: 22.5vh;
+  right: 15vw;
+}
+
+#hero .icon#ha4 {
+  bottom: 22.5vh;
+  right: 15vw;
+}
+
+#hero .icon#ha5 {
+  top: 5vh;
+  left: calc(50vw - 5vmin);
+}
+
+#hero .icon#ha6 {
+  bottom: 5vh;
+  left: calc(50vw - 5vmin);
+}

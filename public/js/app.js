@@ -63,15 +63,27 @@
 /******/ 	__webpack_require__.p = "./";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports) {
+
+console.log(console.log());
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-(function webpackMissingModule() { throw new Error("Cannot find module \"/home/f03/php/f03.io/src/app.js\""); }());
-(function webpackMissingModule() { throw new Error("Cannot find module \"/home/f03/php/f03.io/src/app.scss\""); }());
+__webpack_require__(0);
+module.exports = __webpack_require__(1);
 
 
 /***/ })
