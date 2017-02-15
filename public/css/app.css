@@ -41,22 +41,49 @@ a:hover {
   background: #444;
 }
 
+.app-container header .menu i {
+  cursor: pointer;
+  color: #888;
+}
+
+.app-container header .menu:focus {
+  pointer-events: none;
+}
+
+.app-container header .menu:focus i:before {
+  content: "\F136";
+}
+
+.app-container header .menu:focus + nav {
+  height: 4rem;
+}
+
 .app-container header nav {
   display: block;
-  padding-top: 2rem;
-  padding-bottom: .5rem;
+  height: 1px;
+  overflow: hidden;
+  -webkit-transition: height 0.4s ease;
+  transition: height 0.4s ease;
+  padding: 0;
+  background: #333;
 }
 
 .app-container header nav a,
 .app-container header nav .logo {
   display: inline-block;
   font-size: 1rem;
+  position: relative;
   vertical-align: bottom;
+  margin-top: 1.5rem;
 }
 
 .app-container header nav a + *,
 .app-container header nav .logo + * {
   margin-left: 1rem;
+}
+
+.app-container header nav .logo {
+  font-size: 1.5rem;
 }
 
 .app-container main {

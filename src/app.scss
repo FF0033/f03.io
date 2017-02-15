@@ -34,17 +34,40 @@ a{
         width:100%;
         display:block;
         background:#444;
+        .menu{
+            i{
+                cursor:pointer;
+                color:#888;
+            }
+            &:focus{
+                i:before{
+                    content:"\f136";
+                }
+                pointer-events:none;
+                &+nav{
+                    height:4rem;
+                }
+            }
+        }
         nav{
             display:block;
-            padding-top:2rem;
-            padding-bottom:.5rem;
+            height:1px;
+            overflow:hidden;
+            transition:height 0.4s ease;
+            padding:0;
+            background:#333;
             a,.logo{
                 display:inline-block;
                 font-size:1rem;
+                position:relative;
                 vertical-align:bottom;
+                margin-top:1.5rem;
                 &+*{
                     margin-left:1rem;
                 }
+            }
+            .logo{
+                font-size:1.5rem;
             }
         }
     }
