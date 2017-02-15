@@ -49,10 +49,12 @@ a:hover {
   color: #888;
   font-size: 1.5rem;
   padding-top: .2rem;
+  outline: none;
 }
 
 .app-container header .menu:focus {
   pointer-events: none;
+  outline: none;
 }
 
 .app-container header .menu:focus i:before {
@@ -74,7 +76,7 @@ a:hover {
   -webkit-transition: height 0.4s ease;
   transition: height 0.4s ease;
   padding: 0;
-  background: #333;
+  background: #444;
 }
 
 .app-container header nav a,
