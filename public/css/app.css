@@ -17,6 +17,8 @@ body {
   width: 100%;
   left: 0;
   top: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 a {
@@ -39,11 +41,14 @@ a:hover {
   width: 100%;
   display: block;
   background: #444;
+  height: 2.5rem;
 }
 
 .app-container header .menu i {
   cursor: pointer;
   color: #888;
+  font-size: 1.5rem;
+  padding-top: .2rem;
 }
 
 .app-container header .menu:focus {
@@ -58,9 +63,13 @@ a:hover {
   height: 4rem;
 }
 
+.app-container header .menu:focus ~ .meme > * {
+  margin-top: 3.5rem;
+}
+
 .app-container header nav {
   display: block;
-  height: 1px;
+  height: 0px;
   overflow: hidden;
   -webkit-transition: height 0.4s ease;
   transition: height 0.4s ease;
@@ -74,7 +83,7 @@ a:hover {
   font-size: 1rem;
   position: relative;
   vertical-align: bottom;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .app-container header nav a + *,
@@ -99,4 +108,82 @@ a:hover {
   color: #aaa;
   font-size: .75rem;
   margin-top: 2rem;
+}
+
+.meme > * {
+  width: 30vw;
+  height: 1.5rem;
+  background: transparent;
+  border-left: 10vw solid transparent;
+  border-right: 20vw solid transparent;
+  border-top: 0px solid #ccc;
+  border-bottom: .5rem solid #ccc;
+  position: absolute;
+  top: 1rem;
+  left: -30vw;
+  -webkit-animation: meme 3.872s infinite;
+          animation: meme 3.872s infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  pointer-events: none;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.meme > *:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.meme > *:nth-of-type(2) {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.meme > *:nth-of-type(3) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.meme > *:nth-of-type(4) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.meme > *:nth-of-type(5) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.meme > *:nth-of-type(6) {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+@-webkit-keyframes meme {
+  0% {
+    left: -30vw;
+  }
+
+  50% {
+    left: 100%;
+  }
+
+  100% {
+    left: -30vw;
+  }
+}
+
+@keyframes meme {
+  0% {
+    left: -30vw;
+  }
+
+  50% {
+    left: 100%;
+  }
+
+  100% {
+    left: -30vw;
+  }
 }
