@@ -114,28 +114,45 @@ a{
         position:absolute;
         top:1rem;
         left:-30vw;
-        animation:meme 3.872s infinite;
+        animation:meme 6.272s infinite;
         animation-timing-function: linear;
         pointer-events:none;
         transition:0.4s ease;
+        &.reverse{
+            border-left:20vw solid transparent;
+            border-right:10vw solid transparent;
+        }
         &:nth-of-type(1){
             animation-delay:0s;
         }
         &:nth-of-type(2){
-            animation-delay:.5s;
+            animation-delay:-1s;
         }
         &:nth-of-type(3){
-            animation-delay:1s;
+            animation-delay:-2s;
         }
         &:nth-of-type(4){
-            animation-delay:1.5s;
+            animation-delay:-3s;
         }
         &:nth-of-type(5){
-            animation-delay:2s;
+            animation-delay:-4s;
         }
         &:nth-of-type(6){
-            animation-delay:2.5s;
+            animation-delay:-5s;
         }
+        &:nth-of-type(7){
+            animation-delay:-6s;
+        }
+        &:nth-of-type(8){
+            animation-delay:-7s;
+        }
+        &:nth-of-type(9){
+            animation-delay:-8s;
+        }
+        &:nth-of-type(10){
+            animation-delay:-9s;
+        }
+
     }
 }
 
